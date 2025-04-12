@@ -16,7 +16,7 @@ spec:
     spec:
       containers:
       - name: tic-tac-toe
-        image: ghcr.io/pyasadileep/first-project:sha-dcc9bde68e89225847c79962e5142d7a60abd130
+        image: ghcr.io/pyasadileep/first-project:sha-a7406337b8200dd0e9966b498499ffc0900971f3
         # Image will be automatically updated by CI/CD pipeline
         imagePullPolicy: Always
         ports:
