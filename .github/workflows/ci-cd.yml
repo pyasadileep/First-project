@@ -120,6 +120,10 @@ jobs:
           tags: ${{ steps.meta.outputs.tags }}
           labels: ${{ steps.meta.outputs.labels }}
           load: true
+
+      - name: Normalize image name to lowercase
+        run: echo "IMAGE_NAME_LC=$(echo '${{ env.IMAGE_NAME }}' | tr '[:upper:]' '[:lower:]')" >> $GITHUB_ENV
+
       
       - name: Run Trivy vulnerability scanner
         uses: aquasecurity/trivy-action@master
