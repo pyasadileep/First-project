@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 # DevSecOps Pipeline Implementation for Tic Tac Toe Game
 
 ![Screenshot 2025-03-04 at 7 16 48 PM](https://github.com/user-attachments/assets/7ed79f9c-9144-4870-accd-500085a15592)
@@ -88,3 +89,7 @@ yarn build
 
 The build artifacts will be stored in the `dist/` directory.
 
+=======
+# First-project
+my first devsecops project
+>>>>>>> cc2dd913c0a7a2660459ce6dfe1948d65734b52b
