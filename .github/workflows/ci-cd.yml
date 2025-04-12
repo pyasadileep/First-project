@@ -111,12 +111,12 @@ jobs:
             type=sha,format=long
             type=ref,event=branch
             latest
-      
+            
       - name: Build Docker image
         uses: docker/build-push-action@v5
         with:
           context: .
-          push: false
+          push: true   # Push the image first!
           tags: ${{ steps.meta.outputs.tags }}
           labels: ${{ steps.meta.outputs.labels }}
           load: true
