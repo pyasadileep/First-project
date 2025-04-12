@@ -1,5 +1,5 @@
 # Build stage
-FROM alpine:latest # if available
+FROM alpine:latest
 WORKDIR /app
 COPY package*.json ./
 RUN npm ci
